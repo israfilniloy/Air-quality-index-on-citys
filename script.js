@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
    const messageDiv = document.getElementById("message");
 
    form.addEventListener("submit", function (e) {
-       e.preventDefault(); // Prevent default form submit
+       e.preventDefault(); 
 
-       // Clear previous message
+      
        messageDiv.textContent = "";
 
-       // Get values
+       
        const name = document.getElementById("name").value.trim();
        const email = document.getElementById("email").value.trim();
        const username = document.getElementById("username").value.trim();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
        const month = form.querySelector('input[name="month"]').value.trim();
        const year = form.querySelector('input[name="year"]').value.trim();
 
-       // Validation
+      
        if (!name || !email || !username || !password || !confirmPassword) {
            messageDiv.textContent = "Please fill out all required fields.";
            messageDiv.style.color = "red";
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
            return;
        }
 
-       // Success
+   
        messageDiv.textContent = "Registration Successful!";
        messageDiv.style.color = "green";
        form.reset();
