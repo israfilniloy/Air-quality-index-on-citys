@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>REGISTRATION</legend>
+
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+                <span class="info">i</span>
+            </div>
+
+            <div class="form-group">
+                <label for="username">User Name :</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password :</label>
+                <input type="password" id="confirmpassword" name="confirmpassword">
+            </div>
+
+            <fieldset class="inner-fieldset">
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset class="inner-fieldset">
+                <legend>Date of Birth</legend>
+                <input type="text" name="day" maxlength="2" placeholder="DD">
+                <input type="text" name="month" maxlength="2" placeholder="MM">
+                <input type="text" name="year" maxlength="4" placeholder="YYYY">
+                <span>(dd/mm/yyyy)</span>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+          </form>
+          <div id="message"></div>
+          </body>
+          
+        </fieldset>
+    </form>
+</body>
+</html>
